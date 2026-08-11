@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="80" viewBox="0 0 160 80">
+<defs>
+  <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#9ADFFF"/>
+    <stop offset="100%" stop-color="#1677FF"/>
+  </linearGradient>
+  <style>
+    .dot {
+      fill: url(#blue);
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: wave 1.15s cubic-bezier(.45,0,.55,1) infinite;
+    }
+    .dot1 { animation-delay: 0s; }
+    .dot2 { animation-delay: .15s; }
+    .dot3 { animation-delay: .30s; }
+    @keyframes wave {
+      0%, 100% { transform: translateY(0); opacity: .55; }
+      25% { transform: translateY(-10px); opacity: 1; }
+      50% { transform: translateY(0); opacity: .55; }
+    }
+  </style>
+</defs>
+<circle class="dot dot1" cx="48" cy="40" r="7"/>
+<circle class="dot dot2" cx="80" cy="40" r="7"/>
+<circle class="dot dot3" cx="112" cy="40" r="7"/>
+</svg>
