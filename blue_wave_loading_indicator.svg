@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="80" viewBox="0 0 160 80">
+  <defs>
+    <linearGradient id="blueGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ED8FF"/>
+      <stop offset="100%" stop-color="#1677FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Transparent background; three animated loading dots -->
+  <g transform="translate(80 40)">
+    <!-- Left dot -->
+    <circle cx="-32" cy="0" r="7" fill="url(#blueGradient)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0; 0 -10; 0 0; 0 0"
+        keyTimes="0; 0.25; 0.5; 1"
+        dur="1.2s"
+        begin="0s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0 0 1 1"/>
+      <animate
+        attributeName="opacity"
+        values="0.55;1;0.55;0.55"
+        keyTimes="0;0.25;0.5;1"
+        dur="1.2s"
+        begin="0s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="7" fill="url(#blueGradient)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0; 0 -10; 0 0; 0 0"
+        keyTimes="0; 0.25; 0.5; 1"
+        dur="1.2s"
+        begin="0.15s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0 0 1 1"/>
+      <animate
+        attributeName="opacity"
+        values="0.55;1;0.55;0.55"
+        keyTimes="0;0.25;0.5;1"
+        dur="1.2s"
+        begin="0.15s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Right dot -->
+    <circle cx="32" cy="0" r="7" fill="url(#blueGradient)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0; 0 -10; 0 0; 0 0"
+        keyTimes="0; 0.25; 0.5; 1"
+        dur="1.2s"
+        begin="0.3s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0 0 1 1"/>
+      <animate
+        attributeName="opacity"
+        values="0.55;1;0.55;0.55"
+        keyTimes="0;0.25;0.5;1"
+        dur="1.2s"
+        begin="0.3s"
+        repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
